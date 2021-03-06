@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="codeEditor">
+        <div class="codeEditorSideBar">
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+          </ul>
+        </div>
+        <ul>
+          <li>
+            <span class="variable">const</span>
+            <span class="identifier">you</span> <span class="equal">=</span>
+            <span class="variable">new</span>
+            <span class="SWEngineer">SWEngineer</span>();
+          </li>
+          <li class="emptyLine" style="height: 10px"></li>
+          <li>
+            <span class="variable">let</span> codingInterviewsAreHard
+            <span class="equal">=</span> <span class="bool">true</span>;
+          </li>
+          <li class="emptyLine"></li>
+          <li>
+            <span class="variable">while</span> (codingInterviewsAreHard) {
+          </li>
+          <li>
+            &emsp; <span class="calledIdentifier">you</span>.<span
+              class="function"
+              >useAlgoExpert</span
+            >();
+          </li>
+          <li>}</li>
+          <li class="emptyLine"></li>
+          <li>
+            <span class="calledIdentifier">you</span>.<span class="function"
+              >aceTechInterviews</span
+            >()
+          </li>
+          <li>
+            &emsp; .<span class="function">then</span>(()
+            <span class="variable">=&gt;</span>
+            <span class="calledIdentifier">you</span>.<span class="function"
+              >getDreamJob</span
+            >())
+          </li>
+          <li>
+            &emsp; .<span class="function">catch</span>(()
+            <span class="variable">=&gt;</span>
+            <span class="calledIdentifier">you</span>.<span class="function"
+              >useAlgoExpertMore</span
+            >());
+          </li>
+        </ul>
+      </div>
+    </div>
+    <style>
+      .u-flexSpacer {
+        flex-grow: 1;
+      }
+      .u-bold {
+        font-weight: 600;
+      }
+      .u-hidden {
+        display: none !important;
+      }
+      .parent {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        /* background-color: #02203c; */
+        background-color: #1d1e22;
+      }
+      .codeEditor {
+        position: relative;
+        width: 700px;
+        height: 250px;
+        /* box-sizing: border-box; */
+        border-radius: 15px;
+        /* justify-content: center;
+        align-items: center; */
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(50, 50, 93, 0.1);
+        text-align: center;
+      }
+      @media (max-width: 768px) {
+        .codeEditor {
+          width: auto;
+        }
+      }
+      .codeEditorSideBar {
+        position: relative;
+        width: 40px;
+        height: 100%;
+        background-color: rgba(50, 50, 93, 0.1);
+      }
+      .codeEditorSideBar > ul {
+        left: -28px;
+      }
+      .codeEditor > ul,
+      .codeEditorSideBar > ul {
+        position: absolute;
+        top: 4px;
+        list-style: none;
+      }
+      .codeEditor > ul {
+        left: 12px;
+      }
+      .codeEditor li {
+        text-align: left;
+        font-weight: 600;
+        color: rgba(50, 50, 93, 0.8);
+        font-size: 14px;
+      }
+      .codeEditor li,
+      .codeEditor span {
+        font-family: Source Code Pro, Helvetica, Arial, sans-serif;
+      }
+      .codeEditorSideBar li {
+        text-align: right;
+        font-weight: 400;
+        color: rgba(50, 50, 93, 0.5);
+        font-size: 14px;
+      }
+      .codeEditor .variable {
+        color: #7411ad;
+        font-weight: 600;
+      }
+      .codeEditor .calledIdentifier {
+        color: #c41d1d;
+        font-weight: 600;
+      }
+      .codeEditor .SWEngineer {
+        color: #a0a510;
+        font-weight: 600;
+      }
+      .codeEditor .bool,
+      .codeEditor .identifier {
+        color: #ad6111;
+        font-weight: 600;
+      }
+      .codeEditor .function {
+        color: #2078d6;
+        font-weight: 600;
+      }
+      .codeEditor .comment {
+        color: #babec4;
+        font-weight: 600;
+      }
+      .codeEditor .emptyLine {
+        height: 20px;
+      }
+      @media only screen and (max-width: 480px) {
+        .codeEditor {
+          height: 220px;
+        }
+        .codeEditorSideBar {
+          width: 30px;
+        }
+        .codeEditorSideBar > ul {
+          left: -33px;
+        }
+        .codeEditor > ul {
+          line-height: 17px;
+          left: 0;
+        }
+        .codeEditor li {
+          font-size: 12px;
+        }
+        .codeEditorSideBar li {
+          line-height: 17px;
+        }
+        .emptyLine {
+          height: 17px;
+        }
+      }
+    </style>
+  </body>
+</html>
